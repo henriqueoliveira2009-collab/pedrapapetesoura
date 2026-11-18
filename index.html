@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedra ,papel tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <h1>pedra,papel e tesoura </h1>
+        <p> escolha sua jogada e desafie o computador!</p>
+    </header>
+
+    <section class="placar" <div class="jogador">
+        <h2>Voce</h2>
+        <span id="pontos-jogador">0</span>
+        </div>
+
+        <div class="separador" VS</div>
+
+            <div class="jogador">
+                <h2>computador</h2>
+                <span id="pontos-computador">0</span>
+            </div>
+
+    </section>
+
+    <section class="area-jogo">
+        <h2>Faça sua escolha:</h2>
+
+        <div class="opcoes">
+            <button class="botao-opcao" data-escolha="pedra" ✊​ <span>Pedra</span>
+            </button>
+
+            <button class="botao-opcao" data-escolha="papel">
+                ​🤚​ <span>Papel</span>
+            </button>
+
+            <button class="botao-opcao" data-escolha="tesoura">
+                ​✌️​ <span>Tesoura</span>
+            </button>
+        </div>
+    </section>
+    <section class="resutado">
+        <h2>Resultado da rodada</h2>
+
+        <p>Voce escolheu:</p>
+        <strong id="escolha-jogador">---</strong>
+        <p>O computador escolheu:</p>
+        <strong id="escolha-computador">---</strong>
+        <h3 id="mensagem-resultado">
+        </h3>
+    </section>
+
+    <section class="controles">
+        <button id="botao-reiniciar">
+        </button>
+    </section>
+
+
+    <footer>
+        <p>Projeto educacional-Desenvolvimento de sistemas</p>
+    </footer>
+
+    <!--Antes de fechar o </body>-->
+    <scripts src="script.js" defer></scripts>
+    <!--No conteudo do <body>-->
+
+</body>
+
+</html>
