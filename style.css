@@ -1,0 +1,165 @@
+/*CONFIGURAÇOES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg, #e9f1ff, #f5edff);
+    min-height: 100vh;
+    padding:20px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    text-align: center;
+}
+header h1{
+    color:#293b70;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+header p{
+    color: 666666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.placar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f5ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.jogador h2{
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.jogador span {
+    display: block;
+    font-size: 42px;
+    font-weight: bold;
+    color: #4359b5;
+}
+.separador {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e05b5b;
+    
+}
+.opcoes {
+    display: flex;
+    justify-content: center;    
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.botao-opcao {
+    background-color: #edf0ff;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    width: 130px;
+    height: 120px;
+    cursor: pointer;
+    font-size: 42px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    transition:0.3s;
+
+}
+.botao-opcao span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #293b70;
+}
+.botao-opcao:hover {
+    background-color: #dce3ff;
+    border-color: #5269cc;
+    transform: translateY(-5px);
+}
+.resultado {
+    background-color: #f8f8fc;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.resultado h2 {
+    color: #293b70;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.resultado p {
+    color: #666666;
+    margin-top: 10px;
+}
+
+.resultado strong {
+    display:block;
+
+    color: #333333;
+    margin-top: 5px;
+}
+
+#mensagem-resultado {
+    margin-top: 10px;
+    Color: #4359b5;
+    font-size: 20px;
+}       
+.controles {
+    margin-top: 25px;
+}
+.botao-reniciar {
+    background-color: #e05b5b;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.botao-reniciar:hover {
+    background-color: #bd3e3e;
+}
+footer {
+    margin-top: 30px;
+    color: #999999;
+    font-size: 12px;
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .botao-opcao {
+        width: 90px;
+        height: 100px;
+       }
+
+       .jogador span {
+        font-size: 32px;
+       }
+}
